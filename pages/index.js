@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-
-
+import BarcelonaWeather from './Components/BarcelonaWeather';
+import VeniceWeather from './Components/VeniceWeather';
+import BerlinWeather from './BerlinWeather';
+import LondonWeather from './Components/LondonWeather';
+import ParisWeather from './Components/ParisWeather';
+import AmsterdamWeather from './Components/AmsterdamWeather';
 
 export default function Home() {
   return (
@@ -22,9 +26,9 @@ export default function Home() {
           <div class="col-start-1 col-end-5 ...  text-center shadow-lg rounded-xl h-96 bg-[url('https://cdn.wallpapersafari.com/50/91/QMOVWb.jpg')] w-full md:w-full lg:w-full  bg-cover  bg-center "> 
               
             <div class=" bg-gray-900 bg-opacity-50 h-96 w-full md:w-full lg:w-full bg-cover  bg-center shadow-lg rounded-xl">
-              <h1 className="text-white lg:text-3xl md:text-2xl text-xl font-light content-center pt-20 opacity-100 font-sans">Front-End-Dev</h1>
+              <h1 className="text-white lg:text-3xl md:text-2xl text-xl font-light content-center pt-20 opacity-100 font-sans">FRONT-END-DEV</h1>
 
-              <h2 className="text-white  lg:text-6xl md:text-4xl text-2xl font-light font-sans  ">Valtech</h2>
+              <h2 className="text-white  lg:text-6xl md:text-4xl text-2xl  font-sans  ">VALTECH</h2>
  
            </div>
           </div>
@@ -35,8 +39,11 @@ export default function Home() {
           
             <h1 className="text-white md:text-2xl text-xl font-light font-sans content-center pt-20 brightness-150">ITALY</h1>
 
-            <h2 className="text-white md:text-4xl text-2xl font-light font-sans ">VENICE</h2>
+            <h2 className="text-white md:text-4xl text-2xl  font-sans ">VENICE</h2>
 
+            <div className="py-5">
+          <VeniceWeather/>
+          </div>
 
             </div>
           </div>
@@ -48,8 +55,11 @@ export default function Home() {
                
                 <h1 className="text-white  md:text-2xl text-xl font-light font-sans content-center pt-20">GERMANY</h1>
 
-                <h2 className="text-white  md:text-4xl text-2xl font-light font-sans  ">BERLIN</h2>
+                <h2 className="text-white  md:text-4xl text-2xl  font-sans  ">BERLIN</h2>
 
+                <div className="py-5">
+              <BerlinWeather/>
+                 </div>
         
           </div>
         </div>
@@ -60,9 +70,10 @@ export default function Home() {
           
           <h1 className="text-white md:text-2xl text-xl font-light  font-sans content-center pt-20">SPAIN</h1>
 
-          <h2 className="text-white  md:text-4xl text-2xl font-light font-sans  ">BARCELONA</h2>
-
-
+          <h2 className="text-white  md:text-4xl text-2xl  font-sans">BARCELONA</h2>
+          <div className="py-5">
+          <BarcelonaWeather/>
+          </div>
           </div>
         </div>
 
@@ -73,7 +84,11 @@ export default function Home() {
 
           <h1 className="text-white  md:text-2xl text-xl font-light  font-sans content-center pt-20">FRANCE</h1>
 
-          <h2 className="text-white  md:text-4xl text-2xl font-light font-sans  ">PARIS</h2>
+          <h2 className="text-white  md:text-4xl text-2xl font-sans  ">PARIS</h2>
+
+          <div className="py-5">
+              <ParisWeather/>
+                 </div>
 
         </div>
   
@@ -88,8 +103,12 @@ export default function Home() {
 
           <h1 className="text-white md:text-2xl text-xl font-light font-sans content-center pt-20">NETHERLANDS</h1>
 
-          <h2 className="text-white md:text-4xl text-2xl font-light font-sans  ">AMSTERDAM</h2>
+          <h2 className="text-white md:text-4xl text-2xl font-sans  ">AMSTERDAM</h2>
         
+          <div className="py-5">
+              <AmsterdamWeather/>
+                 </div>
+
           </div>
  
       </div>
@@ -101,8 +120,12 @@ export default function Home() {
 
             <h1 className="text-white md:text-2xl text-xl font-light font-sans content-center pt-20">ENGLAND</h1>
 
-            <h2 className="text-white md:text-4xl text-2xl font-light font-sans  ">LONDON</h2>
-        
+            <h2 className="text-white md:text-4xl text-2xl font-sans  ">LONDON</h2>
+
+            <div className="py-5">
+          <LondonWeather/>
+          </div>
+
         </div>
 
               
